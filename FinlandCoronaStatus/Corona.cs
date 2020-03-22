@@ -17,7 +17,7 @@ namespace FinlandCoronaStatus
             var diseased = jObject["confirmed"].ToList();
             var deaths = jObject["deaths"].ToList();
             var recovered = jObject["recovered"].ToList();
-            return "asd";
+            return "";
 
         }
     }

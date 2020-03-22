@@ -23,8 +23,8 @@ namespace FinlandCoronaStatus
             chart1.Titles.Add("Finland corona status as of: " + (DateTime.Now).ToString("dd/MM/yyyy"));
             chart1.Series["Series1"].IsValueShownAsLabel = true;
             chart1.Series["Series1"].Points.AddXY("Infected", FetchDataFromJSON().Diseased);
-            chart1.Series["Series1"].Points.AddXY("Cured", FetchDataFromJSON().Deaths);
-            chart1.Series["Series1"].Points.AddXY("Deaths", FetchDataFromJSON().Recovered);
+            chart1.Series["Series1"].Points.AddXY("Deaths", FetchDataFromJSON().Deaths);
+            chart1.Series["Series1"].Points.AddXY("Cured", FetchDataFromJSON().Recovered);
         }
         public static CoronaObject FetchDataFromJSON()
         {
